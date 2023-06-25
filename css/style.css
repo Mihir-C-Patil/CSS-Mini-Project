@@ -31,6 +31,14 @@ ul {
     list-style-type: none;
 }
 
+li a {
+    display: block; /*Changes li from inline to block level
+        whole li is clickable, not just the text and colour fills
+        entire list row.
+        Notice last list item colour doesn't have rounded corners
+    */
+}
+
 li {
     border-top: 1px solid #333;
 }
@@ -46,4 +54,8 @@ li a:focus {
     background: #333;
     color: whitesmoke;
     cursor: pointer;
+}
+
+li:last-child a {
+    border-radius: 0 0 2rem 2rem;
 }
